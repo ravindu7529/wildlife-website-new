@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_sub.css">
+    <title>Introduction</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="sri-lankan-wildlife-high-resolution-logo-transparent (1).png" alt="">
+        <nav>
+            
+            <section class="wrapper">
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Intro</a></li>
+                    <li><a href="conservation.html">Conservation</a></li>
+                    <li><a href="leopard.html">Leopard</a></li>
+                    <li><a href="animals.html">Animals</a></li>
+                    <li><a href="yala.html">Yala</a></li>
+                    <li><a href="wilpathu.html">Wilpathu</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="intro.html">Intro</a></li>
+                    <li class="hideOnMobile"><a href="conservation.html">Conservation</a></li>
+                    <li class="hideOnMobile"><a href="leopard.html">Leopard</a></li>
+                    <li class="hideOnMobile"><a href="animals.html">Animals</a></li>
+                    <li class="hideOnMobile"><a href="yala.html">Yala</a></li>
+                    <li class="hideOnMobile"><a href="wilpathu.html">Wilpathu</a></li>
+                    <li onclick="showSidebar()" class="menuButton"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </section>
+        </nav>
+        
+    </header>
+
+    
+
+    <main class="intro_main">
+        <section class="introduction">
+            <h1 class="heading1">Introduction</h1>
+            <p class="intro-text">Sri Lanka, an island nation located in South Asia, is renowned for its rich biodiversity and diverse ecosystems. The wildlife in Sri Lanka is both unique and fascinating, making it a popular destination for nature enthusiasts and wildlife lovers. The country's varied landscapes, which include dense forests, lush wetlands, and coastal areas, contribute to the diverse range of flora and fauna found in Sri Lanka</p>
+        </section>
+
+        <section class="national-parks">
+            <h3>National Parks and Reserves</h3>
+            <p class="intro_text">Sri Lanka is home to numerous national parks and wildlife reserves, each offering a glimpse into the country's natural treasures. Yala National Park, Wilpattu National Park, and Udawalawe National Park are some of the prominent wildlife sanctuaries where visitors can witness a wide array of species in their natural habitats.</p>
+            <img class="intro_image"  src="nationalpark.jpg" alt="national park photo ">
+        </section>
+
+        <section class="leopards">
+            <h3>Minneriya National Park</h3>
+            <p class="intro_text">Famous for the gathering of large herds of elephants, Minneriya National Park is located in the North Central Province. The annual "Elephant Gathering" attracts visitors to witness hundreds of elephants</p>
+            <img class="intro_image" src="Minneriya-National-Park-.jpg" alt="">
+        </section>
+        <section class="conservation">
+            <h3>Sinharaja Forest Reserve</h3>
+            <p class="intro_text">Designated as a UNESCO World Heritage Site, Sinharaja is a primary tropical rainforest in the southwest of Sri Lanka. It is rich in biodiversity, with many endemic species of birds, insects, amphibians, and reptiles</p>
+            <img class="intro_image"    src="sinharaja.jpg" alt="">
+        </section>
+
+        <section class="animals">
+            <a class="heading" href="animals.html"><h3>Horton Plains National Park</h3></a>
+            <p class="intro_text">This park is located in the central highlands and is characterized by montane grasslands and cloud forests. Horton Plains is home to unique flora and fauna, including the elusive Sri Lankan leopard</p>
+            <img class="intro_image"   src="hortonPlains.jpg" alt="">
+        </section>
+    </main>
+    <table class="intro_table">
+        <tr class="intro_tableHead">
+            <th>National Park</th>
+            <th>Animals</th>
+            <th>Unique facts about the Animal</th>
+        </tr>
+        <tr class="intro_tb">
+            <td>Minneriya National Park</td>
+            <td>Elephant</td>
+            <td>Asian elephants are known for their high level of intelligence and are considered one of the most intelligent species on Earth</td>
+        </tr>
+        <tr class="intro_tb">
+            <td>Sinharaja Forest</td>
+            <td>Blue Magpie</td>
+            <td>Blue Magpies are known for their impressive vocal mimicry skills. They can imitate a variety of sounds, including the calls of other bird species and even human-made noises</td>
+        </tr>
+        <tr class="intro_tb">
+            <td>Horton Plains</td>
+            <td>Leopard</td>
+            <td>One of the most remarkable aspects of leopard behavior is their ability to adapt to various environments, from dense rainforests to arid deserts. This adaptability extends to their hunting techniques as well. Leopards are skilled climbers and often hoist their kills into the branches of trees to avoid scavengers like hyenas and lions</td>
+        </tr>
+
+    </table>
+
+
+    <footer>
+        <h5 class="footer_h5">by: Ravindu</h5>
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>

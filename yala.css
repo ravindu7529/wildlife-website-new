@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 85px;
+    background-color:#556b2fc1;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1)
+    
+}
+
+
+nav ul{
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-left: 85px;
+
+}
+
+ul li{
+    height: 72px;
+}
+
+ul li a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #1e1e1e;
+    font-size: bold;
+}
+
+ul li a:hover{
+    color:white;
+    font-size: 16px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.567);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar li a{
+    width: 100%;
+}
+
+
+.logo{
+    width: 80px;
+    position: absolute;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.menuButton{
+    display: none;
+}
+
+
+@media(max-width:770px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+}
+    
+@media(max-width:770px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+body{
+    background-image: url(Images/pexels-lasitha-kulatileke-19658474.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover,cover;
+    margin-top: 0;
+    font-family: 'Roboto';
+}
+
+
+.yala_h1{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 300px;
+    color: rgba(255, 255, 255, 0.592);
+    font-size: 90px;
+    
+}
+
+.about_yala{
+    padding: 120px;
+    background-color: rgba(0, 0, 0, 0.614);
+    margin-top:600px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.about_yala h2{
+   text-align: center;
+}
+
+.about_yala p{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 70px;
+    ;
+}
+
+.yala_images_h2{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+
+}
+
+.image-container{
+    display: flexbox;
+    align-items: center;
+
+    background-color: rgba(41, 105, 47, 0.39);
+}
+.image-container img{
+    margin-left: 150px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    width: 500px;
+    height: 300px;
+    padding: none;
+    align-items: center;
+    align-content: center;
+}
+
+footer{
+    display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    padding-top: 40px;
+    border: none;
+    background-color: #556B2F;
+    align-items: center;
+    align-content: center;
+  }
+
+.footer_h5{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}

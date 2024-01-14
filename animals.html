@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_sub.css">
+    <title>Wildlife in Sri Lanka</title>
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="sri-lankan-wildlife-high-resolution-logo-transparent (1).png" alt="">
+             
+            <section class="wrapper">
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Intro</a></li>
+                    <li><a href="conservation.html">Conservation</a></li>
+                    <li><a href="leopard.html">Leopard</a></li>
+                    <li><a href="animals.html">Animals</a></li>
+                    <li><a href="yala.html">Yala</a></li>
+                    <li><a href="wilpathu.html">Wilpathu</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="intro.html">Intro</a></li>
+                    <li class="hideOnMobile"><a href="conservation.html">Conservation</a></li>
+                    <li class="hideOnMobile"><a href="leopard.html">Leopard</a></li>
+                    <li class="hideOnMobile"><a href="animals.html">Animals</a></li>
+                    <li class="hideOnMobile"><a href="yala.html">Yala</a></li>
+                    <li class="hideOnMobile"><a href="wilpathu.html">Wilpathu</a></li>
+                    <li onclick="showSidebar()" class="menuButton"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </section>
+        </nav>
+        
+    </header>
+    <main class="animals_main">
+        <h1 class="animals_h1">Indigenous Animals</h1>
+        <p>Sri Lanka is home to a variety of indigenous animals, many of which are unique to the island due to its isolation.</p>
+        <h4 class="animals_h4">Some Indigenous Animals Include</h4>
+        <p>1. Sri Lankan Elephant (Elephas maximus maximus): The Sri Lankan elephant is a subspecies of the Asian elephant and is the largest terrestrial mammal on the island. These elephants are a cultural symbol and can be found in various national parks and protected areas</p>
+        <p>2. Sri Lankan Leopard (Panthera pardus kotiya): The Sri Lankan leopard is a subspecies of the leopard that is endemic to Sri Lanka. It is one of the apex predators on the island and is primarily found in national parks such as Yala and Wilpattu</p>
+        <p>3. Purple-faced Langur (Semnopithecus vetulus): Also known as the purple-faced leaf monkey, this primate species is endemic to Sri Lanka. They inhabit the rainforests, especially in places like the Sinharaja Forest Reserve.</p>
+        <p>4. Sri Lankan Axis Deer (Axis axis ceylonensis): Also known as the Ceylon spotted deer, this subspecies of the axis deer is native to Sri Lanka and can be found in various habitats, including grasslands and forests.</p>
+    </main>
+    <section class="animals_back"><h1>NATIONAL PARKS</h1></section>
+    
+    <section class="national_parks">
+        <section class="yala">
+            <h4 class="national_park_h4">Yala National Park</h4>
+            <a href="yala.html"><img class="national_park_img1" src="pexels-oleksandr-p-321524.jpg" alt=""></a>
+        </section>
+        <section class="wilpathu">
+            <h4 class="national_park_h4">Wilpathu National Park</h4>
+            <a href="wilpathu.html"><img class="national_park_img2" src="wilpathu_leopard.jpg" alt=""></a>
+        </section>
+
+    </section>
+    
+    <footer>
+        <h5 class="footer_h5">by: Ravindu</h5>
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>
